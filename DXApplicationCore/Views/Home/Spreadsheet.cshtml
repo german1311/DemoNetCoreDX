@@ -1,0 +1,12 @@
+﻿@inject IWebHostEnvironment env
+
+@{
+    ViewData["Title"] = "Spreadsheet";
+}
+
+<h1>Spreadsheet</h1>
+
+
+@(Html.DevExpress()
+    .Spreadsheet("spreadsheet")
+    .DocumentRequestHandlerUrl(Url.Action("DxDocumentRequest")))

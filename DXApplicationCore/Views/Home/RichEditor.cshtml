@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "RickEditor";
+}
+
+<h2>RickEditor</h2>
+
+@(Html.DevExpress().RichEdit("richEdit")
+    .Width("100%")
+    .Height(800)
+    .ExportUrl(Url.Action("Export"))
+    .AutoCorrect(a => a
+        .CorrectTwoInitialCapitals(true)
+        .ReplaceTextAsYouType(true)
+        .ReplaceInfoCollectionSettings(s =>
+        {
+            s.CaseSensitive(true);
+            s.ReplaceInfoCollection(c =>
+            {
+                c.Add().What("(c)").With("©");
+                c.Add().What("wnwd").With("well-nourished, well-developed");
+            });
+        })
+    )
+    .Bookmarks(b => b
+        .Visibility(DevExpress.AspNetCore.RichEdit.Visibility.Visible)
+        .Color(System.Drawing.Color.Blue)
+    )
+    .Ribbon(ribbon => ribbon
+        .ActiveTabIndex(0)
+    )
+    .Open("Documents/Example.docx")
+)

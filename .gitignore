@@ -1,0 +1,128 @@
+# .NET Core
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.map
+*.obj
+*.appx
+*.appxupload
+*.blockmap
+*.msix
+*.msixbundle
+*.appinstaller
+*.vsix
+*.nupkg
+*.snupkg
+*.symbols.nupkg
+*.csproj.FileListAbsolute.txt
+*.userosscache
+*.userprefs
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+**/bin
+**/obj
+
+
+# ASP.NET Core
+*.vs/
+.vscode/
+.vs/*
+wwwroot/lib/*
+**/node_modules/*
+**/bower_components/*
+
+# DevExpress
+*.cache
+*.log
+**/dx-analytics-*
+**/dx-reportdesigner-*
+**/dx-querybuilder-*
+**/dx-web-document-viewer-*
+**/dx-dashboard-*
+
+# Visual Studio Code
+.vscode/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Mono Auto Generated Files
+mono_crash.*
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# VS Code directories
+.vscode/
+.vscode/*
+
+# NPM packages
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# StyleCop
+StyleCop.Cache
+
+# JetBrains Rider
+.idea/
+.idea/*
+
+# ReSharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# SQL Server files
+*.mdf
+*.ldf
+*.ndf
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Local History for JetBrains IDEs
+.localhistory/
+
+# Rider
+.idea/
+.idea/*
+.idea_modules/
+
+# Fody - auto-generated files
+FodyWeavers.xsd
+FodyWeavers.xml
+*.Fody.dll
+
+# Debugging logs
+*.log
+
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+Icon?
+._*
+.fseventsd
