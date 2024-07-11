@@ -11,7 +11,7 @@
     <title>DXApplicationCore</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="~/node_modules/devextreme-dist/css/dx.light.css" rel="stylesheet" />
-    
+
     <link href="~/node_modules/devexpress-richedit/dist/dx.richedit.css" rel="stylesheet" />
 
     <link href="~/node_modules/devexpress-aspnetcore-spreadsheet/dist/dx-aspnetcore-spreadsheet.css" rel="stylesheet" />
@@ -20,7 +20,7 @@
     @* <script src="https://unpkg.com/devextreme-quill@23_2/dist/dx-quill.min.js"></script> *@
 
     @* Uncomment to use the Gantt control *@
-    @*<link href="~/css/devextreme/dx-gantt.css" rel="stylesheet" />*@
+    <link href="~/css/devextreme/dx-gantt.css" rel="stylesheet" />
 
     @* Uncomment to use the Diagram control *@
     @*<link href="~/css/devextreme/dx-diagram.css" rel="stylesheet" />*@
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="~/css/Site.css" />
 
     @* Uncomment to use the Gantt control *@
-    @*<script src="~/js/devextreme/dx-gantt.js"></script>*@
+    <script src="~/js/devextreme/dx-gantt.js"></script>
 
     @* Uncomment to use the Diagram control *@
     @*<script src="~/js/devextreme/dx-diagram.js"></script>*@
@@ -65,16 +65,17 @@
     <script src="~/js/devextreme/aspnet/dx.aspnet.data.js"></script>
     <script src="~/node_modules/jszip/dist/jszip.min.js"></script>
     <script src="~/node_modules/devextreme-dist/js/dx.all.js"></script>
-    
+
     @* Uncomment the script below if you localize the Rich Text Editor*@
     @*<script src="~/node_modules/devexpress-richedit/localization/dx-rich.de.js"></script>*@
 
     @* Uncomment the script below if you export a document to PDF on the client side or enable
-    client PDF printing mode *@
+        client PDF printing mode *@
     @*<script src="~/node_modules/devexpress-richedit/dist/pdfkit.js"></script>*@
 
     <script src="~/node_modules/devexpress-richedit/dist/dx.richedit.js"></script>
     <script src="~/node_modules/devexpress-aspnetcore-spreadsheet/dist/dx-aspnetcore-spreadsheet.js"></script>
+
 </head>
 
 <body class="dx-viewport">
@@ -158,6 +159,12 @@
                     .Icon("info")
                     .Option("path", GetUrl("Spreadsheet"))
                     .Selected(IsCurrentUrl("Spreadsheet"));
+
+                    items.Add()
+                   .Text("Gantt")
+                   .Icon("info")
+                   .Option("path", GetUrl("Gantt"))
+                   .Selected(IsCurrentUrl("Gantt"));
                 })
                 .ExpandEvent(TreeViewExpandEvent.Click)
                 .SelectionMode(NavSelectionMode.Single)

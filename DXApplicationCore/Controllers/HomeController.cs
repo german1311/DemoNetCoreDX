@@ -39,5 +39,10 @@ namespace DXApplicationCore.Controllers
         {
             return SpreadsheetRequestProcessor.GetResponse(HttpContext);
         }
+
+        public IActionResult Gantt()
+        {
+            return View();
+        }
     }
 }
